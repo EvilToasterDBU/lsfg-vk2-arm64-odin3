@@ -1,0 +1,8 @@
+.DS_Store
+*.pyc
+__pycache__/
+node_modules/
+.pnpm-store/
+build/
+cmake-build-*/
+*.swp

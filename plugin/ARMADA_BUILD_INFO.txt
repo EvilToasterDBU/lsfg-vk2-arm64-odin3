@@ -1,0 +1,7 @@
+LSFG-VK 2 ARM64 Hot-1X
+Plugin version: 0.13.0-odin3-arm64.8-hot1x
+Target: AYN Odin 3 / Armada / AArch64
+Engine base: lsfg-vk 2.0.0-dev28
+Distribution: self-contained bundled binary
+Features: live 1X passthrough; hot 1X <-> 2X/3X/4X; private Vulkan layer path; Gamescope WSI bypass
+Launch option: /usr/libexec/armada/armada-game-launch ~/.local/bin/lsfg-vk2-arm64 %command%

@@ -1,0 +1,54 @@
+{
+  "name": "decky-lsfg-vk2-arm64",
+  "version": "0.13.0-odin3-arm64.8-hot1x",
+  "description": "Self-contained patched lsfg-vk 2 ARM64 Hot-1X Decky plugin for AYN Odin 3 / Armada",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xXJSONDeruloXx/decky-lsfg-vk.git"
+  },
+  "keywords": [
+    "decky",
+    "plugin",
+    "steam-deck",
+    "deck",
+    "lossless-scaling",
+    "frame-generation",
+    "lsfg-vk",
+    "framegen"
+  ],
+  "author": "Kurt Himebauch <dkh4830@gmail.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/xXJSONDeruloXx/decky-lossless-scaling-vk/issues"
+  },
+  "homepage": "https://github.com/xXJSONDeruloXx/decky-lossless-scaling-vk#readme",
+  "devDependencies": {
+    "@decky/rollup": "^1.0.1",
+    "@decky/ui": "^4.7.2",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "@types/webpack": "^5.28.5",
+    "rollup": "^4.22.5",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@decky/api": "^1.1.2",
+    "react-icons": "^5.3.0",
+    "tslib": "^2.7.0"
+  },
+  "remote_binary_bundling": false,
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "react",
+        "react-dom"
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "LSFG-VK 2 ARM64",
+  "author": "Kurt Himebauch; Odin 3 ARM64 adaptation",
+  "flags": [],
+  "api_version": 1,
+  "publish": {
+    "tags": [
+      "installer",
+      "vulkan",
+      "lsfg",
+      "framegen",
+      "arm64",
+      "experimental"
+    ],
+    "description": "Self-contained patched lsfg-vk 2.0-dev28 for AYN Odin 3 / Armada ARM64 with live 1X passthrough and 2X-4X frame generation.",
+    "image": "https://raw.githubusercontent.com/xXJSONDeruloXx/decky-lsfg-vk/refs/heads/main/assets/Decky_LSFG-VK_Master_1.png"
+  }
+}

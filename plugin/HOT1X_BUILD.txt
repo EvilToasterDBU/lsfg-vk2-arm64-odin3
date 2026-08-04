@@ -1,0 +1,5 @@
+LSFG-VK 2 ARM64 Hot-1X self-contained build
+Plugin version: 0.13.0-odin3-arm64.8-hot1x
+Bundled layer SHA-256: 701d1dd2a09a2e54d14f3be18c7f7ac8730e601ef9ebd4f60c06c1d1f0a430f6
+Engine: patched lsfg-vk 2.0.0-dev28 AArch64
+Launch option: /usr/libexec/armada/armada-game-launch ~/.local/bin/lsfg-vk2-arm64 %command%

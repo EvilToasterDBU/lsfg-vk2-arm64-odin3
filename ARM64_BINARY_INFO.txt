@@ -1,0 +1,1 @@
+/mnt/data/lsfg-vk2-arm64-odin3-repo/plugin/bin/arm64-hot1x/liblsfg-vk-layer.so: ELF 64-bit LSB shared object, ARM aarch64, version 1 (GNU/Linux), dynamically linked, BuildID[sha1]=2945e0a0ef4bfcb4414e9506fe3868dff92da4cf, not stripped

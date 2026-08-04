@@ -1,0 +1,11 @@
+# cmake files
+/build
+
+# ide
+/.zed
+/.vscode
+
+# tools
+/.clangd
+/.cache
+/.ccls
