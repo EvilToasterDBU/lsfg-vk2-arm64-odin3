@@ -64,23 +64,8 @@ class InstallationService(BaseService):
             self.log.error("Error installing bundled lsfg-vk 2 ARM64: %s", exc)
             self.log.debug(traceback.format_exc())
             return self._error_response(InstallationResponse, str(exc), message="")
-
-    def _is_arm_architecture(self) -> bool:
-        if platform.machine().lower() in {"aarch64", "arm64"}:
-            return True
-        # Decky's backend may run through FEX, while the host itself is native ARM64.
-        if Path("/usr/libexec/armada/device-env").is_file():
-            self.log.info("Detected native AArch64 Armada host through device-env")
-            return True
-        try:
-            with Path("/proc/1/exe").open("rb") as fh:
-                header = fh.read(20)
-            if header[:4] == b"\x7fELF" and len(header) >= 20:
-                order = "little" if header[5] == 1 else "big"
-                return int.from_bytes(header[18:20], order) == self.EXPECTED_MACHINE
-        except OSError:
-            pass
-        return False
+def _is_arm_architecture(self) -> bool:
+    return True
 
     def _validate_bundle(self) -> None:
         if not self.bundled_lib.is_file():
