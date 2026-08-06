@@ -26,7 +26,7 @@ Decky → Settings → Developer → Install Plugin from Zip
 ## Launch option
 
 ```bash
-/usr/libexec/armada/armada-game-launch ~/.local/bin/lsfg-vk2-arm64 %command%
+~/.local/bin/lsfg-vk2-arm64 %command%
 ```
 
 The plugin includes a **Copy Launch Option** button.
