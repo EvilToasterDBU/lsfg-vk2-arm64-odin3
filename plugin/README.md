@@ -18,7 +18,7 @@ Install the ZIP through Decky Loader developer settings. The bundled engine is d
 ## Launch option
 
 ```bash
-/usr/libexec/armada/armada-game-launch ~/.local/bin/lsfg-vk2-arm64 %command%
+~/.local/bin/lsfg-vk2-arm64 %command%
 ```
 
 ## Files

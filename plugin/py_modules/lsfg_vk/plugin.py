@@ -256,7 +256,7 @@ class Plugin:
             Dict containing the launch option string and instructions
         """
         return {
-            "launch_option": "/usr/libexec/armada/armada-game-launch ~/.local/bin/lsfg-vk2-arm64 %command%",
+            "launch_option": "~/.local/bin/lsfg-vk2-arm64 %command%",
             "instructions": "Add this to the game's launch options in Steam Properties",
             "explanation": "The bundled Hot-1X layer and wrapper are installed automatically by the plugin"
         }
