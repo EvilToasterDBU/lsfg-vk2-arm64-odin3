@@ -66,14 +66,14 @@ class InstallationService(BaseService):
             return self._error_response(InstallationResponse, str(exc), message="")
 
     def _is_arm_architecture(self) -> bool:
-        if platform.machine().lower() in {"aarch64", "arm64", "x86_64"}:
+        if platform.machine().lower() in {"aarch64", "arm64"}:
             return True
         # Decky's backend may run through FEX, while the host itself is native ARM64.
         if Path("/usr/libexec/armada/device-env").is_file():
             self.log.info("Detected native AArch64 Armada host through device-env")
             return True
         if Path("/usr/lib/pocknix/device.conf").is_file():
-            self.log.info("Detected native AArch64 Armada host through device-env")
+            self.log.info("Detected native AArch64 pocknix host through device.conf")
             return True
         try:
             with Path("/proc/1/exe").open("rb") as fh:
