@@ -1,8 +1,8 @@
 variant=LSFG-VK-3-ARM64-Odin3
 upstream_url=https://git.lsfg-vk.dev/lsfg-vk.git
 upstream_ref=master
-upstream_commit=f58c34072939aadbc6eb8fb202d6aa262e5f4c64
-upstream_commit_date=2026-09-04T17:41:24+02:00
+upstream_commit=0e7a3898c1285b13df8596f2bd2cbb8f85b4383b
+upstream_commit_date=2026-09-08T13:03:41+02:00
 build_arch=aarch64
 build_os=Linux
 adaptation=none
