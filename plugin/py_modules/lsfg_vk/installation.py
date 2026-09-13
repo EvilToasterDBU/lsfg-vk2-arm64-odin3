@@ -66,7 +66,7 @@ class InstallationService(BaseService):
             return self._error_response(InstallationResponse, str(exc), message="")
 
     def _is_arm_architecture(self) -> bool:
-        if platform.machine().lower() in {"aarch64", "arm64"}:
+        if platform.machine().lower() in {"aarch64", "arm64", "x86_64"}:
             return True
         # Decky's backend may run through FEX, while the host itself is native ARM64.
         if Path("/usr/libexec/armada/device-env").is_file():
