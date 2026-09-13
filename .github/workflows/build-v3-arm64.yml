@@ -2,7 +2,7 @@ name: Build LSFG-VK v3 ARM64
 
 on:
   push:
-    branches: [v3-upstream-arm64]
+    branches: [pocknix]
     paths:
       - '.github/workflows/build-v3-arm64.yml'
       - 'scripts/build-v3-upstream.sh'
@@ -21,7 +21,7 @@ jobs:
       - name: Checkout Odin 3 integration
         uses: actions/checkout@v4
         with:
-          ref: v3-upstream-arm64
+          ref: pocknix
           fetch-depth: 0
 
       - name: Install native ARM64 build dependencies
@@ -68,4 +68,4 @@ jobs:
           fi
           UPSTREAM_SHA="$(sed -n 's/^upstream_commit=//p' plugin/bin/arm64-v3/UPSTREAM_BUILD_INFO.txt)"
           git commit -m "build(v3): ARM64 upstream ${UPSTREAM_SHA:0:12}"
-          git push origin HEAD:v3-upstream-arm64
+          git push origin HEAD:pocknix
